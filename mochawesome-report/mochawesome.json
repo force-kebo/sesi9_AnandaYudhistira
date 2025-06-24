@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-06-24T10:04:06.942Z",
+    "end": "2025-06-24T10:04:12.066Z",
+    "duration": 5124,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f1b5db60-b16b-472f-93e8-b39395eb94cf",
+      "title": "",
+      "fullFile": "E:\\bootcamp\\Sesi9_AnandaYudhistira\\test-sauce.js",
+      "file": "\\test-sauce.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f7c7bdd2-cb0c-4c6f-a711-e69a714f786b",
+          "title": "Google Search Test",
+          "fullFile": "E:\\bootcamp\\Sesi9_AnandaYudhistira\\test-sauce.js",
+          "file": "\\test-sauce.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Visit SauceDemo dan cek page title",
+              "fullTitle": "Google Search Test Visit SauceDemo dan cek page title",
+              "timedOut": false,
+              "duration": 5120,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('firefox').build();\nawait driver.get('https://www.saucedemo.com/');\nlet inputUsername = await driver.findElement(By.css('*[data-test=\"username\"]'))\nlet inputPassword = await driver.findElement(By.xpath('//*[@id=\"password\"]'))\nlet buttonLogin = await driver.findElement(By.className('submit-button btn_action'))\nawait inputUsername.sendKeys('standard_user')\nawait inputPassword.sendKeys('secret_sauce')\nawait buttonLogin.click()\nlet buttonOption = await driver.findElement(By.css('*[data-test=\"product-sort-container'))\nawait buttonOption.click()\nlet buttonOptionSelect = await driver.findElement(By.xpath('//*[@id=\"header_container\"]/div[2]/div/span/select/option[2]'))\nawait buttonOptionSelect.click()\nawait driver.sleep(1000)\nawait driver.quit();",
+              "err": {},
+              "uuid": "059c741d-3a55-4538-809c-1d2f5d22ca56",
+              "parentUUID": "f7c7bdd2-cb0c-4c6f-a711-e69a714f786b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "059c741d-3a55-4538-809c-1d2f5d22ca56"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5120,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 60000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 60000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.8.2"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
