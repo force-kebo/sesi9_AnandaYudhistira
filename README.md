@@ -1,15 +1,15 @@
-# Sesi9_AnandaYudhistira Selenium WebDriver Test Suite
+# 🚀 Sesi9_AnandaYudhistira Selenium WebDriver Test Suite
 
-## Overview
+## 📝 Overview
 
 This project automates browser testing for [SauceDemo](https://www.saucedemo.com/) using Selenium WebDriver, Mocha, and generates rich HTML reports with Mochawesome.
 
-## Project Description
+## 📦 Project Description
 
 - **Automated Test:** The suite logs into SauceDemo, interacts with the product sort dropdown, and verifies page behavior.
 - **Reporting:** Test results are visualized in a detailed HTML report ([mochawesome-report/mochawesome.html](mochawesome-report/mochawesome.html)), including code snippets and execution stats.
 
-## Installation
+## ⚙️ Installation
 
 1. **Clone the repository:**
    ```sh
@@ -21,7 +21,7 @@ This project automates browser testing for [SauceDemo](https://www.saucedemo.com
    npm install
    ```
 
-## Usage
+## ▶️ Usage
 
 - **Run tests and generate Mochawesome report:**
   ```sh
@@ -34,12 +34,12 @@ This project automates browser testing for [SauceDemo](https://www.saucedemo.com
   npm run cobain
   ```
 
-## System Output Language
+## 🌐 System Output Language
 
 - **Test Output:** English and Bahasa Indonesia (test case: "Visit SauceDemo dan cek page title").
 - **Report Language:** English (system messages, stats, and code).
 
-## Example Output
+## 📊 Example Output
 
 - **Terminal:**  
   ```
